@@ -1,0 +1,77 @@
+# SASS NOTES
+
+This repository contains SASS topics and their notes to learn from beginner level to advanced level.
+
+*Refer the below contents, To kick start the learning of important concepts in SASS for Front-End application development. which gives you __step by step__ approach to the concepts.*
+\
+&nbsp;
+
+## &#9776; CONTENTS 
+
+### Fundamentals
+
+1. [Introduction](./docs/introduction.md)
+	- What is Sass?
+	- Installation and Setup
+2. [Basic Syntax](./docs/basic-syntax.md)
+	- Setting up basic Sass project structure
+	- Comments
+3. [DataTypes and Variables](./docs/datatypes-and-variables.md)
+	- Sass Math
+	- Constants
+	- Operators	
+4. [Nesting](./docs/nesting.md)
+5. [Partials](./docs/partials.md)
+
+### Core SASS Concepts
+
+1. [Meta Comments](./docs/meta-comments.md)
+	- [At Rules](./docs/at-rules.md)
+	- Controlling the Compilation Process
+	- call higher order functions
+2. [Mixins](./docs/mixins.md)
+	- Basic Mixins
+	- Mixins with Arguments
+3. [Placeholders](./docs/placeholders.md)
+4. [Functions](./docs/functions.md)
+	- Built-in Functions
+	- Custom Functions
+
+### Advanced SASS Concepts
+
+1. [Control Directives](./docs/control-directives.md)
+	- Control Flow Statements
+	- Loops  
+2. [Maps and Lists](./docs/maps-and-lists.md)
+	- Creating and Using Maps
+	- Iterating Over Maps and Lists
+3. [Modules](./docs/modules.md)
+	- built-in modules
+	- Importing Modules
+	- Exporting Modules
+
+### Best Practices
+1. [Naming Conventions](./docs/naming-conventions.md)
+2. [Indentation](./docs/indentation.md)
+3. [Comments](./docs/comments.md)
+4. [Organization](./docs/organization.md)
+5. [Modularization](./docs/modularity.md)
+6. [Performance Optimization](./docs/performance-optimization.md)
+7. [CSS Methodology](./docs/css-methodology.md)
+	- BEM
+	- SMACSS
+	- ITCSS
+
+By following this road map and consistently practicing, you can develop a strong foundation in SASS and build impressive web designs. For better understanding, consult with expert and double check with [Official SASS manual](https://sass-lang.com/documentation/), Before proceed in real-time implementations.
+
+## &#9873; Contribution
+Contributions are welcome! If you have any suggestions, bug reports, or feature requests, please open an issue or submit a pull request. Make sure to follow the existing coding style and provide clear documentation for your changes.
+
+## &#9873; License
+This reference licensed under the [MIT license](LICENSE). Feel free to use, modify, and distribute it as per the terms of the license.
+
+## &#9873; Contact
+If you have any questions or need further assistance, please feel free to reach me by referring [My Github Profile](https://github.com/ag-sanjjeev/)
+
+
+Thanks for reviewing this reference notes!
