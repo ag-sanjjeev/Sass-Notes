@@ -19,10 +19,10 @@ This repository contains SASS topics and their notes to learn from beginner leve
 	- [Syntax Types](./docs/basic-syntax.md#-syntax-types)
 	- [Setting up](./docs/basic-syntax.md#-setting-up)
 	- [Comments](./docs/basic-syntax.md#-comments)
-3. [DataTypes and Variables](./docs/datatypes-and-variables.md)
-	- Sass Math
-	- Constants
-	- Operators	
+3. [Sass Math](./docs/sass-math.md)
+	- [Data types](./docs/sass-math.md#-data-types)
+	- [Variables](./docs/sass-math.md#-variables)
+	- [Operators](./docs/sass-math.md#-operators)
 4. [Nesting](./docs/nesting.md)
 5. [Partials](./docs/partials.md)
 

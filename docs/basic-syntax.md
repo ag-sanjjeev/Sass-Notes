@@ -116,6 +116,6 @@ multi-line comment
 ---
 [&#8682; To Top](#-basic-syntax)
 
-[&#10094; Previous Topic](./introduction.md) &emsp; [Next Topic &#10095;](./datatypes-and-variables.md)
+[&#10094; Previous Topic](./introduction.md) &emsp; [Next Topic &#10095;](./sass-math.md)
 
 [&#8962; Goto Home Page](../README.md)
