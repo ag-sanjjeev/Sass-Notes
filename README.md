@@ -16,8 +16,9 @@ This repository contains SASS topics and their notes to learn from beginner leve
 	- [Compile Sass](./docs/introduction.md#-compile-sass)
 	- [Need for Sass](./docs/introduction.md#-need-for-sass)
 2. [Basic Syntax](./docs/basic-syntax.md)
-	- Setting up basic Sass project structure
-	- Comments
+	- [Syntax Types](./docs/basic-syntax.md#-syntax-types)
+	- [Setting up](./docs/basic-syntax.md#-setting-up)
+	- [Comments](./docs/basic-syntax.md#-comments)
 3. [DataTypes and Variables](./docs/datatypes-and-variables.md)
 	- Sass Math
 	- Constants

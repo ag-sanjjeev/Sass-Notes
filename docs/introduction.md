@@ -1,5 +1,5 @@
 ## &#10162; Introduction:
-This introduction will gives you the basic information about Sass before getting into topics.
+This introduction will gives the basic information about Sass before getting into topics.
 
 ### &#9780; Overview:
 1. [What is Sass?](#-what-is-sass)
