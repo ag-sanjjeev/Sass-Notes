@@ -10,9 +10,11 @@ This repository contains SASS topics and their notes to learn from beginner leve
 
 ### Fundamentals
 
-1. [Introduction](./docs/introduction.md)
-	- What is Sass?
-	- Installation and Setup
+1. [Introduction:](./docs/introduction.md)
+	- [What is Sass?](./docs/introduction.md#-what-is-sass)
+	- [Installation](./docs/introduction.md#-installation)
+	- [Compile Sass](./docs/introduction.md#-compile-sass)
+	- [Need for Sass](./docs/introduction.md#-need-for-sass)
 2. [Basic Syntax](./docs/basic-syntax.md)
 	- Setting up basic Sass project structure
 	- Comments
