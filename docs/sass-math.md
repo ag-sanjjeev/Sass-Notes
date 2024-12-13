@@ -35,6 +35,35 @@ $primary-color: #E7E7E7;
 $font-size: 14px;
 ```
 
+**Variable Usage:**
+```scss
+.rectangle {
+  $size: 100px;
+  width: $size * 2;
+  height: $size;
+}
+
+.circle {
+	$size: 100px;
+	width: $size;
+	height: $size;
+	border-radius: $size * 0.5;
+}
+```
+
+```css
+.rectangle {
+  width: 200px;
+  height: 100px; 
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+}
+```
+
 ### &#10022; Operators:
 It supports various operators for mathematical calculations, comparisons and logical operations. Ensure operants are compatible data types to perform calculations.
 
