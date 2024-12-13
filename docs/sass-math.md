@@ -28,14 +28,27 @@ Sass primarily deals with two kinds of data types:
 5. Maps
 
 ### &#10022; Variables:
-It allow to store values that can be reused throughout project styles. It is defined using the `$` symbol.
+Sass variable declaration looks a like property declaration. But it stores values that can be reused throughout project styles. It is defined using the `$` symbol.
 
 ```scss
 $primary-color: #E7E7E7;
+$border-primary: rgba($primary-color, 0.8);
 $font-size: 14px;
 ```
 
+*Respective CSS Output:*
+
+```css
+.card {
+  background-color: white;
+  color: #E7E7E7;
+  border-color: rgba(231, 231, 231, 0.8);
+  font-size: 14px;
+}
+```
+
 **Variable Usage:**
+
 ```scss
 .rectangle {
   $size: 100px;
@@ -51,6 +64,8 @@ $font-size: 14px;
 }
 ```
 
+*Respective CSS Output:*
+
 ```css
 .rectangle {
   width: 200px;
@@ -61,6 +76,208 @@ $font-size: 14px;
   width: 100px;
   height: 100px;
   border-radius: 50px;
+}
+```
+
+**Identical Variables:**
+
+Sass treats variables with hyphens `-` and underscore `_` as same. And it is identical. For example, `$font-size` and `$font_size` are referred as same. In early days, Sass supports only underscore. In later, Sass provides support for hyphens to deal with CSS properties and migration purpose.
+
+```scss
+$font-size: 14px;
+
+p {
+	font-size: $font_size;
+}
+```
+
+*Respective CSS Output:*
+
+```css
+p {
+  font-size: 14px;
+}
+```
+
+**Default Value:**
+
+It allow to assign value to a variables only if that are null or not defined before. Otherwise, It would not allow to overwrite. Default value can be defined with `!default` flag.
+
+```scss
+$font-size: 14px;
+
+p {
+	$font-size: 15px !default;
+	font-size: $font-size;
+}
+```
+
+*Respective CSS Output:*
+
+```css
+p {
+  font-size: 14px;
+}
+```
+
+**Built-in Variables:**
+
+Built-in variables are defined in the built-in modules. Which cannot be overwritten.
+
+```scss
+@use "sass:math" as math;
+
+// Cannot overwrite
+math.$pi: 0;
+```
+
+*Respective Compilation Message:*
+
+```bash
+Error: Cannot modify built-in variable.
+  ╷
+4 │ math.$pi: 0;
+  │ ^^^^^^^^^^^
+  ╵
+  test\main.scss 4:1  root stylesheet
+```
+
+**Global Variables:**
+
+Variables declared in the top level of stylesheet is referred as global variables. It can be accessed throughout stylesheet.
+
+```scss
+$global-variable: level global;
+
+.selector {
+  global: $global-variable;
+}
+
+.another-selector {
+  global: $global-variable;
+}
+```
+
+*Respective CSS Output:*
+
+```css
+.selector {
+  global: level global;
+}
+
+.another-selector {
+  global: level global;
+}
+```
+
+**Local Variables:**
+
+Variables declared in the specific scope level of stylesheet is referred as local variables. It can be accessed within the scope.
+
+```scss
+.selector {
+  $local-variable: level local;
+  local: $local-variable;
+}
+
+.another-selector {
+	local: $local-variable;
+}
+```
+
+*Respective Compilation Message:*
+
+```bash
+Error: Undefined variable.
+  ╷
+7 │     local: $local-variable;
+  │            ^^^^^^^^^^^^^^^
+  ╵
+  test\main.scss 7:9  root stylesheet
+```
+
+**Variable Shadowing:**
+
+It gives possibilities to create local variable with same name of global variable without affecting and conflict their values.
+
+```scss
+$variable: level global;
+
+.selector {
+	$variable: level local;
+	property: $variable;
+}
+
+.another-selector {
+	property: $variable;
+}
+```
+
+*Respective CSS Output:*
+
+```css
+.selector {
+  property: level local;
+}
+
+.another-selector {
+  property: level global;
+}
+```
+
+To overwrite value to the global variable by assign a value with `!global` flag.
+
+```scss
+$variable: level global;
+
+.selector {
+	$variable: level local !global;
+	property: $variable;
+}
+
+.another-selector {
+	property: $variable;
+}
+```
+
+*Respective CSS Output:*
+
+```css
+.selector {
+  property: level local;
+}
+
+.another-selector {
+  property: level local;
+}
+```
+
+**Control Variable with Flow Control:**
+
+Using control flow logic to change variable value.
+
+```scss
+$dark-theme: true !default;
+$primary-color: #81D4FA !default;
+$secondary-color: #E0E0E0 !default;
+
+@if $dark-theme {
+  $primary-color: darken($primary-color, 50%);
+  $secondary-color: lighten($secondary-color, 50%);
+}
+
+.card {
+  background-color: $primary-color;
+  box-shadow: 1px 1px solid $secondary-color;
+}
+```
+
+*Respective CSS Output:*
+
+```css
+.card {
+  background-color: #055377;
+  box-shadow: 1px 1px solid white;
 }
 ```
 
