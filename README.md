@@ -24,7 +24,13 @@ This repository contains SASS topics and their notes to learn from beginner leve
 	- [Variables](./docs/sass-math.md#-variables)
 	- [Operators](./docs/sass-math.md#-operators)
 4. [Nesting](./docs/nesting.md)
+	- [Basic Nesting](./docs/nesting.md#-basic-nesting)
+	- [Advanced Nesting](./docs/nesting.md#-advanced-nesting)
+	- [Selectors](./docs/nesting.md#-selectors)
+	- [Properties and Values](./docs/nesting.md#-properties-and-values)
 5. [Partials](./docs/partials.md)
+	- [Defining Partials](./docs/partials.md#-defining-partials)
+	- [Import Partials](./docs/partials.md#-import-partials)
 
 ### Core SASS Concepts
 
