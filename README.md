@@ -35,9 +35,10 @@ This repository contains SASS topics and their notes to learn from beginner leve
 ### Core SASS Concepts
 
 1. [Meta Comments](./docs/meta-comments.md)
-	- [At Rules](./docs/at-rules.md)
-	- Controlling the Compilation Process
-	- call higher order functions
+	- [At Rules](./docs/meta-comments.md#-at-rules)
+	- [Compilation Control](./docs/meta-comments.md#-compilation-control)
+	- [Conditional Compilation](./docs/meta-comments.md#-conditional-compilation) 
+	- [Debugging and Error Handling](./docs/meta-comments.md#-debugging-and-error-handling) 
 2. [Mixins](./docs/mixins.md)
 	- Basic Mixins
 	- Mixins with Arguments
