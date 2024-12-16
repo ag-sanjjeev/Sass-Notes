@@ -5,6 +5,7 @@ This will instruct about Sass syntax and project setting up information.
 1. [Syntax Types](#-syntax-types)
 2. [Setting up](#-setting-up)
 3. [Comments](#-comments)
+4. [File Paths](#-file-paths)
 
 ### &#10022; Syntax Types:
 It supports two types of syntaxes.
@@ -112,6 +113,21 @@ This is a
 multi-line comment
 */
 ```
+
+### &#10022; File Paths:
+
+Sass stylesheets loads other Sass files by URL of the file path. This means instructed to use forward slashes `/` rather than backslashes `\` on any operating systems.
+
+URLs are case-sensitive. As the same, Sass will consider `Base.scss` and `base.scss` to be different eventhough on a case-insensitive filesystem. Make sure the Sass file names and URLs match the actual names and URLs on disk, or this will might load twice or won’t work.
+
+Sass can load other stylesheet as relative to the current file first. If it not exist then it proceed with defined load path. Make sure the file name conflict with other Sass stylesheet.
+
+Relative imports can be supported like `./`. 
+
+Sass has a feature of [Partials](./partials.md). It means to load other stylesheet as modules and not to be compiled.
+
+Sass can find `_index.scss` or `_index.sass` in a directory and it will be loaded automatically when mention the URL for the directory itself rather than mentioning custom entry point for styles.
+
 
 ---
 [&#8682; To Top](#-basic-syntax)

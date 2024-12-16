@@ -19,6 +19,7 @@ This repository contains SASS topics and their notes to learn from beginner leve
 	- [Syntax Types](./docs/basic-syntax.md#-syntax-types)
 	- [Setting up](./docs/basic-syntax.md#-setting-up)
 	- [Comments](./docs/basic-syntax.md#-comments)
+	- [File Paths](./docs/basic-syntax.md#-file-paths)
 3. [Sass Math](./docs/sass-math.md)
 	- [Data types](./docs/sass-math.md#-data-types)
 	- [Variables](./docs/sass-math.md#-variables)
