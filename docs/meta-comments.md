@@ -45,12 +45,48 @@ List of common compilation control:
 
 ### &#10022; Import: 
 
-Imports other Sass partials and styles.
+Imports other Sass modules, partials and styles. It can import Sass files and CSS styles. It is not like CSS imports. But it requires a browser to make HTTP request as it renders the page. 
+
+Sass imports are always handle during compilation. It is same as CSS import except it will allow multiple imports on each @import statement.
+
+Indented Sass doesn't require quoted string for the URL in the import.
+
+Import statement might going to be `deprecated`. But it is preferred to use `@use` rule instead.
 
 ```scss
+@import "theme.css";
 @import "base";
-@import "layout";
+@import url(layout);
+@import "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap";
+@import "landscape" screen and (orientation: landscape);
 ```
+
+**Interpolation:**
+
+It can possible to dynamically import through plain CSS import with mixins and functions. But Sass can't directly offer to interpolate imports.
+
+```scss
+// _variables.scss
+@mixin import-font($family) {
+  @import url("http://fonts.googleapis.com/css2?family=#{$family}");
+}
+
+// main.scss
+@use 'variables';
+@include variables.import-font('Open+Sans');
+```
+
+*Respective CSS Output:*
+
+```css
+@import url("http://fonts.googleapis.com/css2?family=Open+Sans");
+```
+
+**Problems with Import Statement:**
+- @import will make all members are globally accessible. So, it necessary and require to add prefix to make them unique and avoid conflict with others on large scale projects.
+- @extend rule also make all members are globally accessible. And it is difficult to identify which module gets extended.
+- It will compile Sass styles and exports the respective CSS each time when @import statement found in the Sass stylesheet. So, it increases the compilation time and exports bloated CSS output.
+- It is not possible to define private members or no way to control visibility to it's members.
 
 ### &#10022; Use: 
 
@@ -97,7 +133,7 @@ with @use rule to access members of Sass styles such as functions, mixins and va
 }
 ```
 
-**Permalink** 
+**Permalink:** 
 
 When access long and lengthy styles filename in shorter with @use rule and `as` keyword. 
 
@@ -211,7 +247,7 @@ variables.$primary: green;
 test\main.scss:6 DEBUG: green
 ```
 
-**Overwriting a built-in modules' variables**
+**Overwriting a built-in modules' variables:**
 
 Sass prevents overwrite to an existing modules' variables. 
 
@@ -237,9 +273,19 @@ test\main.scss 4:3  root stylesheet
 
 ### &#10022; Forward: 
 
-Import modules with custom configuration on it. 
+@forward rule is similar to @use rule in Sass. It loads functions, mixins and variables from other stylesheets. It make public members to be available in the current stylesheet. 
 
-*Usage 1:*
+Each @forward rule loads one file at once. and it can have have only one URL.
+
+@forward rule must requires quotes around file names and URLs, eventhough the indented syntax.
+
+It is suggested and good practices to write @forward rule first before @use rule for same Sass stylesheet. Because, configuration will be applied first with the @forward rule before any @use rule takes place to load without configuration.
+
+@forward rule can be extended with @use rule, eventhough not yet used.
+
+It import modules as same as @use rule with custom configuration on it. 
+
+**Usage 1:**
 
 ```scss
 @forward 'partials' as part-*;
@@ -247,7 +293,7 @@ Import modules with custom configuration on it.
 $part-color: red !default;
 ```
 
-*Usage 2:*
+**Usage 2:**
 
 ```scss
 // _base.scss
@@ -281,6 +327,112 @@ $box-shadow: 0 5px 5px rgba($black, 0.1) !default;
   color: #1B1B1B;
   border-radius: 10px;
   box-shadow: 0 5px 5px rgba(27, 27, 27, 0.1);
+}
+```
+
+**Extending @forward rule:**
+
+```scss
+// _resets.scss
+@mixin list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+// _partials.scss
+@forward "resets";
+
+// styles.scss
+@use "partials";
+
+li {
+  @include partials.list-reset;
+}
+```
+
+*Respective CSS Output:*
+
+```css
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+```
+
+**Adding Prefix:**
+
+Module members are used with namespace. Their names might make no sense when it declared simple and short. Add prefix to all of their members for identification. It is possible to add prefix with @forward rule.
+
+```scss
+// _links.scss
+@mixin reset {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+// _partials.scss
+@forward "links" as links-*;
+
+// main.scss
+@use "partials";
+
+a {
+  @include partials.links-reset;
+}
+``` 
+
+*Respective CSS Output:*
+
+```css
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+```
+
+**Controlling Visibility:**
+
+To make some members to kept as private and don't allow them to be forwarded in further or restrict the visibility out of the module. It is possible to control visibility of the member with keywords `show` and `hide`.
+
+```scss
+// _links.scss
+$font-weight: bold;
+
+@mixin reset {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+@mixin anchor-links {
+  @include reset;
+
+  font-weight: $font-weight;
+}
+
+// _partials.scss
+@forward "links" hide reset, $font-weight;
+
+// main.scss
+@use "partials";
+
+a {
+  @include partials.anchor-links;
+}
+```
+
+*Respective CSS Output:*
+
+```css
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-weight: bold;
 }
 ```
 

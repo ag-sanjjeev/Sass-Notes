@@ -122,7 +122,7 @@ URLs are case-sensitive. As the same, Sass will consider `Base.scss` and `base.s
 
 Sass can load other stylesheet as relative to the current file first. If it not exist then it proceed with defined load path. Make sure the file name conflict with other Sass stylesheet.
 
-Relative imports can be supported like `./`. 
+Relative imports can be supported and does not require to use `./` relative import URL. 
 
 Sass has a feature of [Partials](./partials.md). It means to load other stylesheet as modules and not to be compiled.
 
