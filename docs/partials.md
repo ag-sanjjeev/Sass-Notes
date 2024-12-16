@@ -15,7 +15,7 @@ $text-color: #000;
 ```
 
 ### &#10022; Import Partials:
-Sass partials can be imported and reused their styles in another stylesheet using `@import` at-rule.
+Sass partials can be imported and reused their styles in another stylesheet using `@import` at-rule. When import partials, it is possible to leave of underscore `_`.
 
 ```scss
 // main.scss
