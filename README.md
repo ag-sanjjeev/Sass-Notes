@@ -15,29 +15,34 @@ This repository contains SASS topics and their notes to learn from beginner leve
 	- [Installation](./docs/introduction.md#-installation)
 	- [Compile Sass](./docs/introduction.md#-compile-sass)
 	- [Need for Sass](./docs/introduction.md#-need-for-sass)
-2. [Basic Syntax](./docs/basic-syntax.md)
+2. [Basic Syntax:](./docs/basic-syntax.md)
 	- [Syntax Types](./docs/basic-syntax.md#-syntax-types)
 	- [Setting up](./docs/basic-syntax.md#-setting-up)
 	- [Comments](./docs/basic-syntax.md#-comments)
 	- [File Paths](./docs/basic-syntax.md#-file-paths)
-3. [Sass Math](./docs/sass-math.md)
+3. [Sass Math:](./docs/sass-math.md)
 	- [Data types](./docs/sass-math.md#-data-types)
 	- [Variables](./docs/sass-math.md#-variables)
 	- [Operators](./docs/sass-math.md#-operators)
-4. [Nesting](./docs/nesting.md)
+4. [Nesting:](./docs/nesting.md)
 	- [Basic Nesting](./docs/nesting.md#-basic-nesting)
 	- [Advanced Nesting](./docs/nesting.md#-advanced-nesting)
 	- [Selectors](./docs/nesting.md#-selectors)
 	- [Properties and Values](./docs/nesting.md#-properties-and-values)
-5. [Partials](./docs/partials.md)
+5. [Partials:](./docs/partials.md)
 	- [Defining Partials](./docs/partials.md#-defining-partials)
 	- [Import Partials](./docs/partials.md#-import-partials)
 
 ### Core SASS Concepts
 
-1. [Meta Comments](./docs/meta-comments.md)
+1. [Strings:](./docs/strings.md)
+	- [Quoted Strings](./docs/strings.md#-quoted-strings),
+	- [Unquoted Strings](./docs/strings.md#-unquoted-strings),
+	- [Strings Concatenation](./docs/strings.md#-strings-concatenation),
+	- [String Manipulation](./docs/strings.md#-string-manipulation)
+2. [Meta Comments:](./docs/meta-comments.md)
 	- [At Rules](./docs/meta-comments.md#-at-rules)
-	- [Compilation Control](./docs/meta-comments.md#-compilation-control)
+	- [Compilation Control:](./docs/meta-comments.md#-compilation-control)
 		- [Import](./docs/meta-comments.md#-import)
 		- [Use](./docs/meta-comments.md#-use)
 		- [Forward](./docs/meta-comments.md#-forward)
@@ -45,23 +50,23 @@ This repository contains SASS topics and their notes to learn from beginner leve
 		- [Function](./docs/meta-comments.md#-function)
 	- [Conditional Compilation](./docs/meta-comments.md#-conditional-compilation) 
 	- [Debugging and Error Handling](./docs/meta-comments.md#-debugging-and-error-handling) 
-2. [Mixins](./docs/mixins.md)
+2. [Mixins:](./docs/mixins.md)
 	- Basic Mixins
 	- Mixins with Arguments
 3. [Placeholders](./docs/placeholders.md)
-4. [Functions](./docs/functions.md)
+4. [Functions:](./docs/functions.md)
 	- Built-in Functions
 	- Custom Functions
 
 ### Advanced SASS Concepts
 
-1. [Control Directives](./docs/control-directives.md)
+1. [Control Directives:](./docs/control-directives.md)
 	- Control Flow Statements
 	- Loops  
-2. [Maps and Lists](./docs/maps-and-lists.md)
+2. [Maps and Lists:](./docs/maps-and-lists.md)
 	- Creating and Using Maps
 	- Iterating Over Maps and Lists
-3. [Modules](./docs/modules.md)
+3. [Modules:](./docs/modules.md)
 	- built-in modules
 	- Importing Modules
 	- Exporting Modules
@@ -73,7 +78,7 @@ This repository contains SASS topics and their notes to learn from beginner leve
 4. [Organization](./docs/organization.md)
 5. [Modularization](./docs/modularity.md)
 6. [Performance Optimization](./docs/performance-optimization.md)
-7. [CSS Methodology](./docs/css-methodology.md)
+7. [CSS Methodology:](./docs/css-methodology.md)
 	- BEM
 	- SMACSS
 	- ITCSS

@@ -39,6 +39,6 @@ body {
 ---
 [&#8682; To Top](#-partials)
 
-[&#10094; Previous Topic](./nesting.md) &emsp; [Next Topic &#10095;](./meta-comments.md)
+[&#10094; Previous Topic](./nesting.md) &emsp; [Next Topic &#10095;](./strings.md)
 
 [&#8962; Goto Home Page](../README.md)
