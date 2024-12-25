@@ -133,6 +133,8 @@ Sass Selector and Parent Selector `&` with `@at-root` rule can give possibilitie
 
 To match a selector with outer selector and an element, It is possible with `selector.unify()` function from Sass selector. 
 
+The `selector.unify()` function will returns a selector that matches between two of the selectors intersection.
+
 ```scss
 @use "sass:selector";
 
