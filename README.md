@@ -65,8 +65,10 @@ This repository contains SASS topics and their notes to learn from beginner leve
 	- [Comparison with functions](./docs/mixins.md#-comparison-with-functions)
 3. [Placeholders](./docs/placeholders.md)
 4. [Functions:](./docs/functions.md)
-	- Built-in Functions
-	- Custom Functions
+	- [Function Declaration](./docs/functions.md#-function-declaration)
+	- [Function Call](./docs/functions.md#-function-call)
+	- [Function Arguments](./docs/functions.md#-function-arguments)
+	- [Built-in Functions](./docs/functions.md#-built-in-functions)
 
 ### Advanced SASS Concepts
 
