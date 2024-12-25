@@ -51,8 +51,18 @@ This repository contains SASS topics and their notes to learn from beginner leve
 	- [Conditional Compilation](./docs/meta-comments.md#-conditional-compilation) 
 	- [Debugging and Error Handling](./docs/meta-comments.md#-debugging-and-error-handling) 
 2. [Mixins:](./docs/mixins.md)
-	- Basic Mixins
-	- Mixins with Arguments
+	- [Mixin Declaration](./docs/mixins.md#-mixin-declaration)
+	- [Utilize Mixin](./docs/mixins.md#-utilize-mixin)
+	- [Mixin with Arguments](./docs/mixins.md#-mixin-with-arguments)
+	- [Mixin with Default Argument Value](./docs/mixins.md#-mixin-with-default-argument-value)
+	- [Keyword Argument](./docs/mixins.md#-keyword-argument)
+	- [N Number of Arguments](./docs/mixins.md#-n-number-of-arguments)
+	- [Arbitrary Keyword](./docs/mixins.md#-arbitrary-keyword)
+	- [Passing Arbitrary Arguments](./docs/mixins.md#-passing-arbitrary-arguments)
+	- [Nested Mixins](./docs/mixins.md#-nested-mixins)
+	- [Passing Argument to Content Block](./docs/mixins.md#-passing-argument-to-content-block)
+	- [Indented Mixins](./docs/mixins.md#-indented-mixins)
+	- [Comparison with functions](./docs/mixins.md#-comparison-with-functions)
 3. [Placeholders](./docs/placeholders.md)
 4. [Functions:](./docs/functions.md)
 	- Built-in Functions
