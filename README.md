@@ -80,8 +80,13 @@ This repository contains SASS topics and their notes to learn from beginner leve
 ### Advanced SASS Concepts
 
 1. [Control Directives:](./docs/control-directives.md)
-	- Control Flow Statements
-	- Loops  
+	- [Control Flow Statements](./docs/control-directives.md#-control-flow-statements)
+	- [IF Statement](./docs/control-directives.md#-if-statement)
+	- [ELSE Statement](./docs/control-directives.md#-else-statement)
+	- [ELSE IF Statement](./docs/control-directives.md#-else-if-statement)
+	- [Loops](./docs/control-directives.md#-loops)
+	- [FOR Loop](./docs/control-directives.md#-for-loop)
+	- [EACH Loop](./docs/control-directives.md#-each-loop)
 2. [Maps and Lists:](./docs/maps-and-lists.md)
 	- Creating and Using Maps
 	- Iterating Over Maps and Lists
