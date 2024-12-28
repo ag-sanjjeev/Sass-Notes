@@ -85,8 +85,11 @@ This repository contains SASS topics and their notes to learn from beginner leve
 	- [ELSE Statement](./docs/control-directives.md#-else-statement)
 	- [ELSE IF Statement](./docs/control-directives.md#-else-if-statement)
 	- [Loops](./docs/control-directives.md#-loops)
-	- [FOR Loop](./docs/control-directives.md#-for-loop)
+	- [FOR Through Loop](./docs/control-directives.md#-for-through-loop)
+	- [FOR To Loop](./docs/control-directives.md#-for-to-loop)
 	- [EACH Loop](./docs/control-directives.md#-each-loop)
+	- [EACH Loop Destructuring](./docs/control-directives.md#-each-loop-destructuring)
+	- [WHILE Loop](./docs/control-directives.md#-while-loop)
 2. [Maps and Lists:](./docs/maps-and-lists.md)
 	- Creating and Using Maps
 	- Iterating Over Maps and Lists
