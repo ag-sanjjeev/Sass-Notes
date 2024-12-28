@@ -91,8 +91,17 @@ This repository contains SASS topics and their notes to learn from beginner leve
 	- [EACH Loop Destructuring](./docs/control-directives.md#-each-loop-destructuring)
 	- [WHILE Loop](./docs/control-directives.md#-while-loop)
 2. [Maps and Lists:](./docs/maps-and-lists.md)
-	- Creating and Using Maps
-	- Iterating Over Maps and Lists
+	- [Maps](./docs/maps-and-lists.md#-maps)
+	- [Accessing Map Items](./docs/maps-and-lists.md#-accessing-map-items)
+	- [Add Map Items](./docs/maps-and-lists.md#-add-map-items)
+	- [Merging Maps](./docs/maps-and-lists.md#-merging-maps)
+	- [Lists](./docs/maps-and-lists.md#-lists)
+	- [List Indexes](./docs/maps-and-lists.md#-list-indexes)
+	- [Accessing List Item](./docs/maps-and-lists.md#-accessing-list-item)
+	- [Iterating List Items](./docs/maps-and-lists.md#-iterating-list-items)
+	- [Append List Item](./docs/maps-and-lists.md#-append-list-item)
+	- [Find List Item Index](./docs/maps-and-lists.md#-find-list-item-index)
+	- [Argument List](./docs/maps-and-lists.md#-argument-list)
 3. [Modules:](./docs/modules.md)
 	- built-in modules
 	- Importing Modules
