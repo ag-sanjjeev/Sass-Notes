@@ -9,6 +9,7 @@ Before sass modules comes into picture, the all other built-in functions are ava
 ### &#9780; Overview:
 1. [Built-in Modules](#-built-in-modules)
 2. [Importing Modules](#-importing-modules)
+3. [Global Functions](#-global-functions)
 
 ### &#10022; Built-in Modules:
 
@@ -32,6 +33,30 @@ This will load modules from node_modules.
 
 ```scss
 @use 'sass:math' as math;
+```
+
+### &#10022; Global Functions:
+
+Sass later versions deprecated the globally available functions. But still some functions will not be deprecate CSS functions such as `rgb()`, `hsl()` and so on.
+
+Sass can allow to pass special CSS functions to arguments to the global color constructor. That functions are `calc()` and `var()`.
+
+
+```scss
+:root {
+--transparency: 0.5;
+--green: green;
+}
+
+@debug rgba(50 60 100 / var(--transparency));
+@debug rgb(calc(50 + 25), calc(50 + 20), calc(50 + 60));
+```
+
+*Respective Compilation Message:*
+
+```bash
+test\main.scss:6 DEBUG: rgba(50 60 100/var(--transparency))
+test\main.scss:7 DEBUG: rgb(75, 70, 110)
 ```
 
 ---

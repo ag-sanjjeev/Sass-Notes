@@ -41,7 +41,8 @@ This repository contains SASS topics and their notes to learn from beginner leve
 	- [Strings Concatenation](./docs/strings.md#-strings-concatenation),
 	- [String Manipulation](./docs/strings.md#-string-manipulation)
 2. [Colors:](./docs/colors.md)
-
+	- [HSL Color](./docs/colors.md#-hsl-color)
+	- [HWB Color](./docs/colors.md#-hwb-color)
 3. [Meta Comments:](./docs/meta-comments.md)
 	- [At Rules](./docs/meta-comments.md#-at-rules)
 	- [Compilation Control:](./docs/meta-comments.md#-compilation-control)
@@ -107,6 +108,7 @@ This repository contains SASS topics and their notes to learn from beginner leve
 3. [Modules:](./docs/modules.md)
 	- [Built-in Modules](./docs/modules.md#-built-in-modules)
 	- [Importing Modules](./docs/modules.md#-importing-modules)
+	- [Global Functions](./docs/modules.md#-global-functions)
 
 ### Best Practices
 1. [Naming Conventions](./docs/naming-conventions.md)
