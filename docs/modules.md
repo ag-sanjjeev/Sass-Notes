@@ -59,6 +59,33 @@ test\main.scss:6 DEBUG: rgba(50 60 100/var(--transparency))
 test\main.scss:7 DEBUG: rgb(75, 70, 110)
 ```
 
+**IF Function:**
+
+This will return different result for different boolean value. It is simple and one line `if` function. This function arguments simply returns rather than evaluate first. 
+
+*Syntax:* 
+
+```scss
+if($condition, $value-for-true, $value-for-false);
+```
+
+*Example:*
+
+```scss
+$a: 10px;
+$b: 15px;
+
+@debug if($a > $b, $a, $b);
+@debug if($a < $b, $a, $b);
+```
+
+*Respective Compilation Message:*
+
+```bash
+test\main.scss:4 DEBUG: 15px
+test\main.scss:5 DEBUG: 10px
+```
+
 ---
 [&#8682; To Top](#-modules)
 
