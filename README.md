@@ -40,7 +40,9 @@ This repository contains SASS topics and their notes to learn from beginner leve
 	- [Unquoted Strings](./docs/strings.md#-unquoted-strings),
 	- [Strings Concatenation](./docs/strings.md#-strings-concatenation),
 	- [String Manipulation](./docs/strings.md#-string-manipulation)
-2. [Meta Comments:](./docs/meta-comments.md)
+2. [Colors:](./docs/colors.md)
+
+3. [Meta Comments:](./docs/meta-comments.md)
 	- [At Rules](./docs/meta-comments.md#-at-rules)
 	- [Compilation Control:](./docs/meta-comments.md#-compilation-control)
 		- [Import](./docs/meta-comments.md#-import)
@@ -50,7 +52,7 @@ This repository contains SASS topics and their notes to learn from beginner leve
 		- [Function](./docs/meta-comments.md#-function)
 	- [Conditional Compilation](./docs/meta-comments.md#-conditional-compilation) 
 	- [Debugging and Error Handling](./docs/meta-comments.md#-debugging-and-error-handling) 
-2. [Mixins:](./docs/mixins.md)
+4. [Mixins:](./docs/mixins.md)
 	- [Mixin Declaration](./docs/mixins.md#-mixin-declaration)
 	- [Utilize Mixin](./docs/mixins.md#-utilize-mixin)
 	- [Mixin with Arguments](./docs/mixins.md#-mixin-with-arguments)
@@ -63,7 +65,7 @@ This repository contains SASS topics and their notes to learn from beginner leve
 	- [Passing Argument to Content Block](./docs/mixins.md#-passing-argument-to-content-block)
 	- [Indented Mixins](./docs/mixins.md#-indented-mixins)
 	- [Comparison with functions](./docs/mixins.md#-comparison-with-functions)
-3. [Placeholders](./docs/placeholders.md)
+5. [Placeholders](./docs/placeholders.md)
 	- [Placeholder Declaration](./docs/placeholders.md#-placeholder-declaration)
 	- [Extending Placeholders](./docs/placeholders.md#-extending-placeholders)
 	- [Extending Multiple Placeholders](./docs/placeholders.md#-extending-multiple-placeholders)
@@ -71,7 +73,7 @@ This repository contains SASS topics and their notes to learn from beginner leve
 	- [Optional Placeholders](./docs/placeholders.md#-optional-placeholders)
 	- [Extend Rule with Class Selector](./docs/placeholders.md#-extend-rule-with-class-selector)
 	- [Extend Pseudo Selector](./docs/placeholders.md#-extend-pseudo-selector)
-4. [Functions:](./docs/functions.md)
+6. [Functions:](./docs/functions.md)
 	- [Function Declaration](./docs/functions.md#-function-declaration)
 	- [Function Call](./docs/functions.md#-function-call)
 	- [Function Arguments](./docs/functions.md#-function-arguments)
@@ -103,9 +105,8 @@ This repository contains SASS topics and their notes to learn from beginner leve
 	- [Find List Item Index](./docs/maps-and-lists.md#-find-list-item-index)
 	- [Argument List](./docs/maps-and-lists.md#-argument-list)
 3. [Modules:](./docs/modules.md)
-	- built-in modules
-	- Importing Modules
-	- Exporting Modules
+	- [Built-in Modules](./docs/modules.md#-built-in-modules)
+	- [Importing Modules](./docs/modules.md#-importing-modules)
 
 ### Best Practices
 1. [Naming Conventions](./docs/naming-conventions.md)
