@@ -11,6 +11,10 @@ Sass has modules for colors. It has built-in functions to create varieties of co
 6. [OKLCH Color](#-oklch-color)
 7. [RGB Color](#-rgb-color)
 8. [Color Adjust Function](#-color-adjust-function)
+9. [Color Change Function](#-color-change-function)
+10. [Opacify and Fade In Functions](#-opacify-and-fade-in-functions)
+11. [Transparentize and Fade Out Functions](#-transparentize-and-fade-out-functions)
+12. [Extract Color Channels](#-extract-color-channels)
 
 ### &#10022; HSL Color:
 
@@ -305,6 +309,196 @@ color.adjust($color,
   $chroma: null,
   $alpha: null,
   $space: null);
+```
+
+*Example:*
+
+```scss
+@use 'sass:color';
+
+@debug color.adjust(#F3C355, $green: 30); 
+@debug color.adjust(hsl(120deg, 50%, 60%), $lightness: 10%);
+@debug color.adjust(#F3C355, $hue: 30deg);
+```
+
+*Respective Compilation Message:*
+
+```bash
+test\main.scss:3 DEBUG: #f3e155
+test\main.scss:4 DEBUG: #8cd98c
+test\main.scss:5 DEBUG: #d4f355
+```
+
+### &#10022; Color Change Function:
+
+Color change function is used to change specified channels for the given color. It gives possibility to change `red`, `green`, `blue`, `hue`, `saturation`, `lightness`, `whiteness`, `blackness`, `x`, `y`, `z`, `chroma`, `alpha` and `space` channels. 
+
+But if space named argument value specified then it will return color in same space type. It requires the color in the first argument. To change any particular channel for given color, then need to specify their key value pair alone.
+
+All the channel values will accepts and never clamped if it out of the range or limit.
+
+```scss
+color.change($color,
+  $red: null, $green: null, $blue: null,
+  $hue: null, $saturation: null, $lightness: null,
+  $whiteness: null, $blackness: null,
+  $x: null, $y: null, $z: null,
+  $chroma: null,
+  $alpha: null,
+  $space: null)
+```
+
+*Example:*
+
+```scss
+@use 'sass:color';
+
+@debug color.change(#F3C355, $blue: 30);
+@debug color.change(red, $green: 0.5, $blue: 0.3);
+@debug color.change(#D3D3D3, $whiteness: 30%);
+```
+
+*Respective Compilation Message:*
+
+```bash
+test\main.scss:3 DEBUG: #f3c31e
+test\main.scss:4 DEBUG: #ff0100
+test\main.scss:5 DEBUG: #d34d4d
+```
+
+### &#10022; Opacify and Fade In Functions:
+
+These color functions will add transparency to the given color by specified alpha channel value. 
+
+```scss
+@use 'sass:color';
+$color: #F3C3553F;
+
+@debug opacify($color, 0.1);
+@debug fade-in($color, 0.1);
+```
+
+*Respective Compilation Message:* 
+
+```bash
+test\main.scss:4 DEBUG: rgba(243, 195, 85, 0.3470588235)
+test\main.scss:5 DEBUG: rgba(243, 195, 85, 0.3470588235)
+```
+
+### &#10022; Transparentize and Fade Out Functions:
+
+These color functions will deduct transparency to the given color by specified alpha channel value. 
+
+```scss
+@use 'sass:color';
+$color: #F3C3553F;
+
+@debug transparentize($color, 0.1);
+@debug fade-out($color, 0.1);
+```
+
+*Respective Compilation Message:* 
+
+```bash
+test\main.scss:4 DEBUG: rgba(243, 195, 85, 0.1470588235)
+test\main.scss:5 DEBUG: rgba(243, 195, 85, 0.1470588235)
+```
+
+### &#10022; Extract Color Channels:
+
+Sass provide built-in color functions to extract particular channel for given color as required.
+
+**Alpha / Opacity:**
+
+```scss
+@use 'sass:color';
+@debug alpha(#F3C3553F);
+@debug color.alpha(#F3C3553F);
+@debug color.opacity(#F3C3553F);
+```
+
+*Respective Compilation Message:*
+
+```bash
+test\main.scss:2 DEBUG: 0.2470588235
+test\main.scss:3 DEBUG: 0.2470588235
+test\main.scss:4 DEBUG: 0.2470588235
+```
+
+**Blackness & Whiteness:**
+
+```scss
+@use 'sass:color';
+$color: #F3C3553F;
+
+@debug color.blackness($color);
+@debug blackness($color);
+
+@debug color.whiteness($color);
+@debug whiteness($color);
+```
+
+*Respective Compilation Message:*
+
+```bash
+test\main.scss:4 DEBUG: 4.7058823529%
+test\main.scss:5 DEBUG: blackness(rgba(243, 195, 85, 0.2470588235))
+test\main.scss:7 DEBUG: 33.3333333333%
+test\main.scss:8 DEBUG: whiteness(rgba(243, 195, 85, 0.2470588235))
+```
+
+**RGB Channels:**
+
+```scss
+@use 'sass:color';
+$color: #F3C3553F;
+
+@debug color.red($color);
+@debug red($color);
+
+@debug color.green($color);
+@debug green($color);
+
+@debug color.blue($color);
+@debug blue($color);
+```
+
+*Respective Compilation Message:*
+
+```bash
+test\main.scss:4 DEBUG: 243
+test\main.scss:5 DEBUG: 243
+test\main.scss:7 DEBUG: 195
+test\main.scss:8 DEBUG: 195
+test\main.scss:10 DEBUG: 85
+test\main.scss:11 DEBUG: 85
+```
+
+**HUE, Saturation & Lightness Channels:**
+
+```scss
+@use 'sass:color';
+$color: #F3C3553F;
+
+@debug color.hue($color);
+@debug hue($color);
+
+@debug color.saturation($color);
+@debug saturation($color);
+
+@debug color.lightness($color);
+@debug lightness($color);
+```
+
+*Respective Compilation Message:*
+
+```bash
+test\main.scss:4 DEBUG: 41.7721518987deg
+test\main.scss:5 DEBUG: 41.7721518987deg
+test\main.scss:7 DEBUG: 86.8131868132%
+test\main.scss:8 DEBUG: 86.8131868132%
+test\main.scss:10 DEBUG: 64.3137254902%
+test\main.scss:11 DEBUG: 64.3137254902%
 ```
 
 ---

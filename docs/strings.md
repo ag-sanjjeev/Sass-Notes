@@ -125,6 +125,6 @@ test\main.scss:12 DEBUG: italic 600 14px sans-serif
 ---
 [&#8682; To Top](#-strings)
 
-[&#10094; Previous Topic](./partials.md) &emsp; [Next Topic &#10095;](./meta-comments.md)
+[&#10094; Previous Topic](./partials.md) &emsp; [Next Topic &#10095;](./colors.md)
 
 [&#8962; Goto Home Page](../README.md)

@@ -523,6 +523,6 @@ See More about [Functions](./functions.md)
 ---
 [&#8682; To Top](#-meta-comments)
 
-[&#10094; Previous Topic](./strings.md) &emsp; [Next Topic &#10095;](./mixins.md)
+[&#10094; Previous Topic](./colors.md) &emsp; [Next Topic &#10095;](./mixins.md)
 
 [&#8962; Goto Home Page](../README.md)
