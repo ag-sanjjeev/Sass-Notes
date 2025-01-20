@@ -237,6 +237,52 @@ These types of selector is neither included in the CSS Style nor a style rule.
 }
 ```
 
+**Unquote Selector Value:**
+
+`unquote` function will remove any quotation marks specified in their argument list.
+
+```scss
+@debug (unquote("button") unquote(".icon"));
+```
+
+*Respective Compilation Message:*
+
+```bash
+test\main.scss:1 DEBUG: button .icon
+```
+
+**Check Super Selector:**
+
+`is-superselector` function will return boolean value for given super selector and sub-selector.
+
+`is-superselector($super, $sub)` will accept two argument. The first one will be super selector value and second one will be sub-selector value. Thus, it checks whether sub-selector is falls under specified super selector and return boolean true if it is, otherwise boolean false.
+
+```scss
+@use 'sass:selector';
+
+@debug selector.is-superselector("button", "button");
+@debug selector.is-superselector("button", "button.active");
+@debug selector.is-superselector("button", ".active");
+```
+
+*Respective Compilation Message:*
+
+```bash
+test\main.scss:3 DEBUG: true
+test\main.scss:4 DEBUG: true
+test\main.scss:5 DEBUG: false
+```
+
+**Other Selector Functions:**
+- `selector.append()`
+- `selector.extend()`
+- `selector.nest()`
+- `selector.parse()`
+- `selector.replace()`
+- `selector.simple-selectors()`
+- `selector.unify()`
+
+
 ### &#10022; Properties and Values:
 Sass supports almost all standard CSS properties and values. Use variables to store values and reuse throughout stylesheet to assign value to properties.
 
