@@ -71,14 +71,16 @@ $border-color: red;
 ### &#10022; String Manipulation:
 Sass provides various functions related to strings manipulation:
 
-- `str-index()`: Returns the index of a substring within a string.
-- `str-insert()`: Inserts a string at a specific index.
-- `str-length()`: Returns the length of a string.
-- `str-slice()`: Extracts a substring from a string.
-- `to-lower-case()`: Converts a string to lowercase.
-- `to-upper-case()`: Converts a string to uppercase.
+- `string.index()`: Returns the index of a substring within a string.
+- `string.insert()`: Inserts a string at a specific index.
+- `string.length()`: Returns the length of a string.
+- `string.slice()`: Extracts a substring from a string.
+- `string.split()`: Splits a string with a separator.
+- `string.to-lower-case()`: Converts a string to lowercase.
+- `string.to-upper-case()`: Converts a string to uppercase.
 - `unquote()`: Removes quotes from a string.
 - `quote()`: Adds quotes to a string.
+- `string.unique-id()`: Generates a random unquoted string.
 
 ```scss
 $font: "600 14px sans-serif";
