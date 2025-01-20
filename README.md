@@ -168,10 +168,9 @@ This repository contains SASS topics and their notes to learn from beginner leve
 	- [Optimize Calculations](./docs/performance-optimization.md#-optimize-calculations)
 	- [Minimize Control Directive](./docs/performance-optimization.md#-minimize-control-directive)
 	- [Utilize Sass Modules](./docs/performance-optimization.md#-utilize-sass-modules)
-7. [CSS Methodology:](./docs/css-methodology.md)
-	- BEM
-	- SMACSS
-	- ITCSS
+3. [CSS Methodology:](./docs/css-methodology.md)
+	- [BEM](./docs/css-methodology.md#-bem)
+	- [SMACSS](./docs/css-methodology.md#-smacss)
 
 By following this road map and consistently practicing, you can develop a strong foundation in SASS and build impressive web designs. For better understanding, consult with expert and double check with [Official SASS manual](https://sass-lang.com/documentation/), Before proceed in real-time implementations.
 
