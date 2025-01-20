@@ -163,7 +163,11 @@ This repository contains SASS topics and their notes to learn from beginner leve
 	- [File Structure](./docs/organization.md#-file-structure)
 	- [Import Order](./docs/organization.md#-import-order)
 	- [Naming Conventions](./docs/organization.md#-naming-conventions)
-6. [Performance Optimization](./docs/performance-optimization.md)
+2. [Performance Optimization](./docs/performance-optimization.md)
+	- [Minimize File Size](./docs/performance-optimization.md#-minimize-file-size)
+	- [Optimize Calculations](./docs/performance-optimization.md#-optimize-calculations)
+	- [Minimize Control Directive](./docs/performance-optimization.md#-minimize-control-directive)
+	- [Utilize Sass Modules](./docs/performance-optimization.md#-utilize-sass-modules)
 7. [CSS Methodology:](./docs/css-methodology.md)
 	- BEM
 	- SMACSS
