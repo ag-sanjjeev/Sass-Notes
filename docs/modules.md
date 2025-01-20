@@ -89,6 +89,6 @@ test\main.scss:5 DEBUG: 10px
 ---
 [&#8682; To Top](#-modules)
 
-[&#10094; Previous Topic](./maps-and-lists.md) &emsp; [Next Topic &#10095;](./naming-conventions.md)
+[&#10094; Previous Topic](./maps-and-lists.md) &emsp; [Next Topic &#10095;](./organization.md)
 
 [&#8962; Goto Home Page](../README.md)

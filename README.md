@@ -159,11 +159,10 @@ This repository contains SASS topics and their notes to learn from beginner leve
 	- [Global Functions](./docs/modules.md#-global-functions)
 
 ### Best Practices
-1. [Naming Conventions](./docs/naming-conventions.md)
-2. [Indentation](./docs/indentation.md)
-3. [Comments](./docs/comments.md)
-4. [Organization](./docs/organization.md)
-5. [Modularization](./docs/modularity.md)
+1. [Organization](./docs/organization.md)
+	- [File Structure](./docs/organization.md#-file-structure)
+	- [Import Order](./docs/organization.md#-import-order)
+	- [Naming Conventions](./docs/organization.md#-naming-conventions)
 6. [Performance Optimization](./docs/performance-optimization.md)
 7. [CSS Methodology:](./docs/css-methodology.md)
 	- BEM
